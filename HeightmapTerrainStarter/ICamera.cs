@@ -16,5 +16,17 @@ namespace HeightmapTerrainStarter
         /// The projection matrix
         /// </summary>
         Matrix Projection { get; }
+
+        /// <summary>
+        /// Gets or sets the heightmap this camera is interacting with
+        /// </summary>
+        public IHeightMap HeightMap { get; set; }
+
+        /// <summary>
+        /// Gets or sets how high above the heightmap the camera should be
+        /// </summary>
+        float HeightOffset { get; set; }
+
+
     }
 }
